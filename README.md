@@ -17,11 +17,6 @@ Follow [this documentation](https://learn.microsoft.com/en-us/azure/api-manageme
 <policies>
     <inbound>
         <set-backend-service id="apim-generated-policy" backend-id="{{will_be_auto_populated_when_creating_the_endpoint}}" />
-        <azure-openai-emit-token-metric>
-            <dimension name="User ID" />
-            <dimension name="Client IP address" value="@(context.Request.IpAddress)" />
-            <dimension name="API ID" />
-        </azure-openai-emit-token-metric>
         <validate-azure-ad-token tenant-id="{{replace_with_your_tenant_id}}">
             <client-application-ids>
                 <application-id>{{replace_with_your_client_id}}</application-id>
