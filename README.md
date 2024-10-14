@@ -54,3 +54,6 @@ Follow [this documentation](https://learn.microsoft.com/en-us/azure/api-manageme
   </on-error>
 </policies>
 ```
+
+In addition, uncheck the `Subscription required` checkbox to allow public web access.  
+![image](https://github.com/user-attachments/assets/628d8182-be9d-4bc6-b529-214fbf1133aa)
